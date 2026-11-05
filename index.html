@@ -134,7 +134,49 @@
   <p>Hours: Monday – Sunday, Open 24/7</p>
   <a class="btn" href="https://maps.app.goo.gl/7ag1GamPRMR4R8Gp9" target="_blank">View Google Business</a>
 </section>
+<section id="booking" class="section booking">
+  <p class="gold">RESERVE YOUR RIDE</p>
+  <h2>Book Your Transportation</h2>
+  <p>Fill out the form and our team will receive your booking request.</p>
 
+  <form action="https://formsubmit.co/info@savannahblackcarandshuttle.com" method="POST">
+    <input type="hidden" name="_subject" value="New Ride Booking Request">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="Customer Name" placeholder="Your Full Name" required>
+
+    <input type="tel" name="Phone Number" placeholder="Your Phone Number" required>
+
+    <input type="email" name="Email" placeholder="Your Email Address" required>
+
+    <select name="Service" required>
+      <option value="">Select Transportation Service</option>
+      <option>Airport Transportation</option>
+      <option>Private Black Car Service</option>
+      <option>Corporate Transportation</option>
+      <option>Wedding Transportation</option>
+      <option>Concert and Event Transportation</option>
+      <option>Tours</option>
+      <option>Other</option>
+    </select>
+
+    <input type="text" name="Pickup Location" placeholder="Pickup Location" required>
+
+    <input type="text" name="Dropoff Location" placeholder="Drop-off Location" required>
+
+    <label>Pickup Date</label>
+    <input type="date" name="Pickup Date" required>
+
+    <label>Pickup Time</label>
+    <input type="time" name="Pickup Time" required>
+
+    <input type="number" name="Passengers" placeholder="Number of Passengers" min="1" required>
+
+    <textarea name="Additional Details" placeholder="Additional Details"></textarea>
+
+    <button type="submit" class="btn">Submit Booking Request</button>
+  </form>
+</section>
 <footer>
   <p>© 2026 Savannah Black Car Service. All Rights Reserved.</p>
 </footer>
