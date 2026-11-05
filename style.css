@@ -41,3 +41,34 @@ footer{padding:35px 7%;text-align:center;background:#050606;border-top:1px solid
 .footer-bottom{max-width:1450px;margin:0 auto;border-top:1px solid #29251e;padding:19px 0;display:flex;justify-content:space-between;gap:15px;font-size:10px;letter-spacing:.5px}
 @media(max-width:1000px){.footer-main{grid-template-columns:1fr 1fr;gap:35px}.footer-map iframe{height:220px}}
 @media(max-width:560px){.site-footer{padding:45px 6% 0}.footer-main{grid-template-columns:1fr;gap:28px;margin-bottom:30px}.footer-map iframe{height:230px}.footer-bottom{flex-direction:column;gap:7px;font-size:9px}}
+
+
+/* Separate full-width map section and refreshed premium footer */
+.location-section{padding:82px 7% 76px;background:#0d1010;border-top:1px solid rgba(201,164,92,.22)}
+.location-heading{max-width:1450px;margin:0 auto 28px}
+.location-heading h2{font:600 clamp(34px,4.5vw,54px)/1.15 "Playfair Display",Georgia,serif;color:#fff;margin-bottom:12px}
+.location-heading h2 em{color:var(--gold);font-style:italic}
+.location-heading>p:last-child{color:#aaa69e;font-size:14px}
+.location-map-frame{max-width:1450px;margin:0 auto;border:1px solid rgba(201,164,92,.55);padding:7px;background:#171918;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.location-map-frame iframe{display:block;width:100%;height:390px;border:0;filter:grayscale(.2) contrast(1.04)}
+.location-map-action{max-width:1450px;margin:17px auto 0;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#d4cfc5;font-size:13px}
+.location-map-action .btn{min-height:43px}
+.site-footer{padding:62px 7% 0;background:#050606;border-top:1px solid var(--line);color:#aaa69e;text-align:left}
+.footer-main{display:grid;grid-template-columns:1.2fr .65fr 1.35fr;gap:7%;max-width:1450px;margin:0 auto 48px}
+.site-footer h3{font-size:10px;letter-spacing:2.2px;color:var(--gold);margin:7px 0 22px}
+.footer-about>p{max-width:360px;font-size:13px;line-height:1.9;margin:18px 0 14px;color:#aaa69e}
+.site-footer .footer-brand{display:inline-block;font:600 20px "Playfair Display",Georgia,serif;color:#fff;letter-spacing:2px}
+.site-footer .footer-brand strong{color:var(--gold)}
+.footer-call{display:block;color:var(--gold-light);font-size:22px;font-weight:700}
+.footer-open{display:block;margin-top:7px;color:#9e927a;font-size:9px;letter-spacing:1.3px}
+.footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.footer-links a{font-size:13px;color:#d2cec5;transition:color .2s}
+.footer-links a:hover,.footer-contact a:hover{color:var(--gold)}
+.footer-contact p{display:flex;flex-direction:column;gap:4px;font-size:13px;line-height:1.7;margin-bottom:14px;overflow-wrap:anywhere;color:#e0ddd6}
+.footer-contact p span{font-size:9px;letter-spacing:1.8px;color:#a38a5b}
+.footer-contact a{color:#e0ddd6}
+.footer-contact .footer-map-link{display:inline-block;color:var(--gold);font-size:10px;letter-spacing:1.4px;font-weight:700;margin-top:4px}
+.footer-bottom{max-width:1450px;margin:0 auto;border-top:1px solid #29251e;padding:21px 0;display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:10px;letter-spacing:.5px}
+.footer-bottom-brand{font-weight:700;letter-spacing:1.2px;color:#d5c29a}
+@media(max-width:850px){.footer-main{grid-template-columns:1fr 1fr;gap:38px}.footer-about{grid-column:1/-1}.location-map-frame iframe{height:330px}}
+@media(max-width:560px){.location-section{padding:62px 5%}.location-map-frame iframe{height:300px}.location-map-action{align-items:flex-start;flex-direction:column}.site-footer{padding:45px 6% 0}.footer-main{grid-template-columns:1fr;gap:30px}.footer-about{grid-column:auto}.footer-bottom{align-items:flex-start;flex-direction:column;gap:8px;font-size:9px}}
